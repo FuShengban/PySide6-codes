@@ -9,7 +9,7 @@ class WinForm(QWidget):
         super(WinForm, self).__init__(parent)
         self.setGeometry(300, 300, 250, 150)
         self.setWindowTitle('启动方式2')
-        button = QPushButton('Close', self)
+        button = QPushButton('退出', self)
         button.clicked.connect(self.close)
 
 
