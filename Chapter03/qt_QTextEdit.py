@@ -45,7 +45,6 @@ class TextEditDemo(QWidget):
 
     def btn_html_Clicked(self):
         a = ''
-
         dirname = _path = os.path.dirname(__file__)
         with open(dirname+'\support\myhtml.html', 'r', encoding='utf8') as f:
             a = f.read()
