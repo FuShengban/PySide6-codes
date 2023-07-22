@@ -45,7 +45,7 @@ class TextEditDemo(QWidget):
 
     def btn_html_Clicked(self):
         a = ''
-        dirname = _path = os.path.dirname(__file__)
+        dirname = os.path.dirname(__file__)
         with open(dirname+'\support\myhtml.html', 'r', encoding='utf8') as f:
             a = f.read()
         self.textEdit.setHtml(a)
@@ -54,7 +54,7 @@ class TextEditDemo(QWidget):
 
     def btn_markdown_Clicked(self):
         a = ''
-        dirname = _path = os.path.dirname(__file__)
+        dirname = os.path.dirname(__file__)
         with open(dirname+'\support\myMarkDown.md', 'r', encoding='utf8') as f:
             a = f.read()
         self.textEdit.setMarkdown(a)
