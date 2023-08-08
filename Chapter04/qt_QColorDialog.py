@@ -92,4 +92,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     form = ColorDlg()
     form.show()
-    app.exec()
+    sys.exit(app.exec())
